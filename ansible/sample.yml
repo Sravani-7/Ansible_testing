@@ -1,0 +1,6 @@
+---
+- hosts: example
+  become: true
+  tasks:
+    - name: "Install pip"
+      yum: name=python-pip state=present
